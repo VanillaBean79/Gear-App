@@ -25,7 +25,16 @@
         "serial#": "IQJ130509"
       },
       {
-        
+        "id": 5,
+        "name": "Dean V X",
+        "Image":"",
+        "serial#": "O08090094"
+      },
+      {
+        "id": 6,
+        "name": "Fender California Series PJ Bass",
+        "Image":"",
+        "serial#":"AMXN719623"
       }
     ]
   }
