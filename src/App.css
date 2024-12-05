@@ -1,7 +1,49 @@
 .GearPage {
+  font-family: Georgia, serif;
   font-size: 44px;
   text-align: center;
   padding: 20px;
   background-color: hsla(130, 77%, 48%, 0.468);
   border-radius: 8px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 1em;
+  color: #777;
+  line-height: 1.5;
 }

@@ -3,38 +3,39 @@
       {
         "id": 1,
         "name": "Fender Precision Bass",
-        "image": "http://localhost:3001/gear/images.png",
-        "serial#": "MZ0165958"
+        "description": "Mexican made fender Mid 1990's. Purple body. Klein 62' Pbass pickups. Seafoam green pickguard. Metalic bridge cover.",
+        "image": "/images/gear1.png",
+        "serial": "MZ0165958"
       },
       {
         "id": 2,
         "name": "Fender Telecastor",
-        "image": "",
-        "serial#": "AO23733"
+        "image": "/images/gear2.png",
+        "serial": "AO23733"
       },
       {
         "id": 3,
         "name": "Ernie Ball Music Man Sting Ray Bass",
         "image":"",
-        "serial#": "BO51685"
+        "serial": "BO51685"
       },
       {
         "id": 4,
         "name": "Yamaha A1M Acoustic Guitar",
         "image":"",
-        "serial#": "IQJ130509"
+        "serial": "IQJ130509"
       },
       {
         "id": 5,
         "name": "Dean V X",
         "Image":"",
-        "serial#": "O08090094"
+        "serial": "O08090094"
       },
       {
         "id": 6,
         "name": "Fender California Series PJ Bass",
         "Image":"",
-        "serial#":"AMXN719623"
+        "serial":"AMXN719623"
       }
     ]
   }
