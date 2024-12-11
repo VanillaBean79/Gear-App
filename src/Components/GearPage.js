@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react"
+import GearCard from './GearCard'
 
 
 function GearPage() {
@@ -18,27 +19,20 @@ function GearPage() {
           });
       }, []);  
 
-    return (
+      return (
         <div className="GearPage">
-            Gear Manager
-            <ul>
-                {gearData.map((gearItem)=> (
-                    <div className="card" key={gearItem.id}>
-                        <div className="card-content">
-                        <h3 className="card-title">{gearItem.name}</h3>
-                            <img 
-                              src={gearItem.image}
-                              alt={gearItem.name}
-                              className="card-image"
-                              />
-                           <p className="card-description">{gearItem.description}</p>
-                          <p className="card-serial">Serial #{gearItem.serial}</p>
-                      </div>
-                    </div>
+            <h2>Gear Manager</h2>
+            {loading ? (
+              <p>Loading...</p>
+            ) : (
+              <ul>
+                {gearData.map((gearItem) => (
+                  <GearCard key={gearItem.id} gearItem={gearItem} />
                 ))}
-            </ul>
+              </ul>
+            )}
         </div>
-    )
+    );
 }
 
 export default GearPage

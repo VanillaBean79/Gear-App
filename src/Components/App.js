@@ -10,10 +10,9 @@ function App() {
     <Router>
       
        <div className="App">
-         <h1>Gear Garage App</h1>
+          <Home />
           <GearForm />
           <GearPage />
-          <Home />
        </div>
      
     </Router>
