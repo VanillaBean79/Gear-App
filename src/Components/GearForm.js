@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-function GearForm(){
+function GearForm( { addGearItem }){
     const [formData, setFormData] = useState({
         image: '',
         name: '',
