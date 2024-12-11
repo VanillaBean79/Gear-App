@@ -78,7 +78,17 @@ function GearForm(){
                         onChange={handleChange}
                         placeholder="Enter gear name"
                         />
+                </div>
 
+                <div className="form-group">
+                    <label htmlFor="name">Description:</label>
+                    <input
+                        type="description"
+                        id="description"
+                        value={formData.description}
+                        onChange={handleChange}
+                        placeholder="Enter gear description."
+                        />
                 </div>
             </form>
         
