@@ -83,8 +83,9 @@ function GearForm(){
                 <div className="form-group">
                     <label htmlFor="description">Description:</label>
                     <input
-                        type="description"
-                        id="description"
+                        type="text"
+                        id="name"
+                        name="description"
                         value={formData.description}
                         onChange={handleChange}
                         placeholder="Enter gear description."
@@ -104,7 +105,7 @@ function GearForm(){
                 </div>
                 <button type='submit'>Submit</button>
             </form>
-        
+            {status && <p className="status">{status}</p>}
         </div>
     )
 }
