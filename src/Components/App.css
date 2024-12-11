@@ -46,10 +46,10 @@ h1 {
   padding: 20px;
 }
 .card-image {
-  width: 150px;           /* Set a fixed width for the image */
-  height: auto;           /* Maintain aspect ratio */
-  border-radius: 15px;     /* Rounded corners for the image */
-  margin-bottom: 10px;    /* Add space between image and content below */
+  width: 150px;           
+  height: auto;          
+  border-radius: 15px;   
+  margin-bottom: 10px;    
   object-fit: cover;
   transform: rotate(90deg); 
 }
@@ -63,7 +63,7 @@ h1 {
 
 
 .card-description {
-  font-size: .5em;       /* Change font size for the description */
+  font-size: .5em;       
   color: #130f0f;
   line-height: 1.5;
   margin-bottom: 10px;
@@ -71,7 +71,7 @@ h1 {
 }
 
 .card-serial {
-  font-size: 0.9em;     /* Change font size for the serial number */
+  font-size: 0.9em;     
   color: #cb3030;
   margin-top: 10px;
 }

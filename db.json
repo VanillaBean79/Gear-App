@@ -1,52 +1,227 @@
 {
-    "Gear": [
-      {
-        "id": 1,
-        "name": "Fender Precision Bass",
-        "description": "Mexican made fender Mid 1990's. Purple body. Klein 62' Pbass pickups. Seafoam green pickguard. Metalic bridge cover.",
-        "image": "/images/gear1.png",
-        "serial": "MZ0165958"
-      },
-      {
-        "id": 2,
-        "name": "Fender Telecastor",
-        "description": "Candy Apple Red with white pickguard. Made in Japan. Red toggle swith top. Mid 1990's model. Rosewood frett board.",
-        "image": "/images/gear2.png",
-        "serial": "AO23733"
-      },
-      {
-        "id": 3,
-        "name": "Ernie Ball Music Man Sting Ray Bass",
-        "description": "Made in AMERICA! Light blue with dark pearl pick guard. Spotted Maple neck. Mute pads on bridge. Best Bass EVER!",
-        "image":"/images/gear3.png",
-        "serial": "BO51685"
-      },
-      {
-        "id": 4,
-        "name": "Yamaha A1M Acoustic Guitar",
-        "description": "Tan Yamaha acoustic with cutaway. Electronic. Made in China.",
-        "image":"/images/gear4.png",
-        "serial": "IQJ130509"
-      },
-      {
-        "id": 5,
-        "name": "Dean V X",
-        "description": "Dean flying V. Multi-Color, red, green, balck drip. Screamin demon neck pickup. Seth Lover Model Humbucker. ",
-        "image":"/images/gear5.png",
-        "serial": "O08090094"
-      },
-      {
-        "id": 6,
-        "name": "Fender California Series PJ Bass",
-        "description": "Black, American Made Fender PJ Bass. D'Marzzio pickups. Metal pickguard (brass colored).",
-        "image":"/images/gear6.png",
-        "serial":"AMXN719623"
-      }
-    ],
-    "name": [
-
-    ],
-    "image": [
-        
-    ]
-  }
+  "Gear": [
+    {
+      "id": "1",
+      "name": "Fender Precision Bass",
+      "description": "Mexican made fender Mid 1990's. Purple body. Klein 62' Pbass pickups. Seafoam green pickguard. Metalic bridge cover.",
+      "image": "/images/gear1.png",
+      "serial": "MZ0165958"
+    },
+    {
+      "id": "2",
+      "name": "Fender Telecastor",
+      "description": "Candy Apple Red with white pickguard. Made in Japan. Red toggle swith top. Mid 1990's model. Rosewood frett board.",
+      "image": "/images/gear2.png",
+      "serial": "AO23733"
+    },
+    {
+      "id": "3",
+      "name": "Ernie Ball Music Man Sting Ray Bass",
+      "description": "Made in AMERICA! Light blue with dark pearl pick guard. Spotted Maple neck. Mute pads on bridge. Best Bass EVER!",
+      "image": "/images/gear3.png",
+      "serial": "BO51685"
+    },
+    {
+      "id": "4",
+      "name": "Yamaha A1M Acoustic Guitar",
+      "description": "Tan Yamaha acoustic with cutaway. Electronic. Made in China.",
+      "image": "/images/gear4.png",
+      "serial": "IQJ130509"
+    },
+    {
+      "id": "5",
+      "name": "Dean V X",
+      "description": "Dean flying V. Multi-Color, red, green, balck drip. Screamin demon neck pickup. Seth Lover Model Humbucker. ",
+      "image": "/images/gear5.png",
+      "serial": "O08090094"
+    },
+    {
+      "id": "6",
+      "name": "Fender California Series PJ Bass",
+      "description": "Black, American Made Fender PJ Bass. D'Marzzio pickups. Metal pickguard (brass colored).",
+      "image": "/images/gear6.png",
+      "serial": "AMXN719623"
+    },
+    {
+      "id": "0014"
+    },
+    {
+      "id": "9502"
+    },
+    {
+      "id": "812e"
+    },
+    {
+      "id": "8b1b"
+    },
+    {
+      "id": "09c2"
+    },
+    {
+      "id": "1c91"
+    },
+    {
+      "id": "f11d"
+    },
+    {
+      "id": "a4c0"
+    },
+    {
+      "id": "7465",
+      "name": "",
+      "image": "",
+      "price": ""
+    },
+    {
+      "id": "6669",
+      "name": "",
+      "image": "",
+      "desctrip": ""
+    },
+    {
+      "id": "3856",
+      "name": "",
+      "image": "",
+      "desctrip": ""
+    },
+    {
+      "id": "5edc",
+      "name": "",
+      "image": "",
+      "description": ""
+    },
+    {
+      "id": "b137",
+      "name": "",
+      "image": "",
+      "description": ""
+    },
+    {
+      "id": "3cb5",
+      "name": "",
+      "image": "",
+      "description": "",
+      "serial": ""
+    },
+    {
+      "id": "3189",
+      "name": "",
+      "image": "",
+      "description": "",
+      "serial": ""
+    },
+    {
+      "id": "ab92",
+      "name": "",
+      "image": "",
+      "description": "",
+      "serial": ""
+    },
+    {
+      "id": "64e6"
+    },
+    {
+      "id": "f9a9"
+    },
+    {
+      "id": "738f",
+      "image": "",
+      "name": "",
+      "description": "",
+      "serial": ""
+    },
+    {
+      "id": "60e1",
+      "image": "",
+      "name": "",
+      "description": "",
+      "serial": ""
+    },
+    {
+      "id": "c3c9",
+      "image": "",
+      "name": "",
+      "description": "",
+      "serial": ""
+    },
+    {
+      "id": "1c3b",
+      "image": "",
+      "name": "",
+      "description": "",
+      "serial": ""
+    },
+    {
+      "id": "5458",
+      "image": "",
+      "name": "",
+      "description": "",
+      "serial": ""
+    },
+    {
+      "id": "6c23",
+      "image": "",
+      "name": "",
+      "description": "",
+      "serial": ""
+    },
+    {
+      "id": "b114",
+      "image": "",
+      "name": "",
+      "description": "",
+      "serial": ""
+    },
+    {
+      "id": "aa5b",
+      "image": "",
+      "name": "",
+      "description": "",
+      "serial": ""
+    },
+    {
+      "id": "d43b",
+      "image": "",
+      "name": "",
+      "description": "",
+      "serial": ""
+    },
+    {
+      "id": "088e",
+      "image": "",
+      "name": "",
+      "description": "",
+      "serial": ""
+    },
+    {
+      "id": "6f24",
+      "image": "",
+      "name": "",
+      "description": "",
+      "serial": ""
+    },
+    {
+      "id": "79b5",
+      "image": "",
+      "name": "",
+      "description": "",
+      "serial": ""
+    },
+    {
+      "id": "0d15",
+      "image": "",
+      "name": "",
+      "description": "",
+      "serial": ""
+    },
+    {
+      "id": "f3ef",
+      "image": "",
+      "name": "",
+      "description": "",
+      "serial": ""
+    }
+  ],
+  "name": [],
+  "image": []
+}
