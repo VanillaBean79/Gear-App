@@ -102,6 +102,7 @@ function GearForm(){
                         placholder="Enter serial number"
                         />
                 </div>
+                <button type='submit'>Submit</button>
             </form>
         
         </div>
