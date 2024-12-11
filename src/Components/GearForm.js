@@ -52,7 +52,21 @@ function GearForm(){
      }
     
     return(
-        <div>
+        <div className="GearForm">
+            <h2>Create New Gear Item</h2>
+            <form onSubmit={handleSubmit}>
+                <div className="form-group">
+                    <label htmlFor="image">Image URL:</label>
+                    <input
+                        type="text"
+                        id="image"
+                        name="image"
+                        value={formData.image}
+                        onChange={handleChange}
+                        placeholder="upload image"
+                        />
+                </div>
+            </form>
         
         </div>
     )
