@@ -81,13 +81,25 @@ function GearForm(){
                 </div>
 
                 <div className="form-group">
-                    <label htmlFor="name">Description:</label>
+                    <label htmlFor="description">Description:</label>
                     <input
                         type="description"
                         id="description"
                         value={formData.description}
                         onChange={handleChange}
                         placeholder="Enter gear description."
+                        />
+                </div>
+
+                <div className='form-group'>
+                    <label htmlFor="serial">Serial Number:</label>
+                    <input
+                        type="text"
+                        id="serial"
+                        name="serial"
+                        value={formData.serial}
+                        onChange={handleChange}
+                        placholder="Enter serial number"
                         />
                 </div>
             </form>
