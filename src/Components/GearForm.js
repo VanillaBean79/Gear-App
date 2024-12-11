@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import './gearForm.css'
 
 function GearForm( { addGearItem }){
     const [formData, setFormData] = useState({
