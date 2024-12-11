@@ -21,11 +21,12 @@ function GearForm(){
       const handleSubmit = (e) => {
         e.preventDefault()
 
-        if (!formData.name || !formData.description || !formData.serial || !formData.image) {
-            setStatus('Please fill out all fields.')
-            return
-        }
-      
+       const newGear = {
+        name: formData.name,
+        image: formData.image,
+        description: formData.description,
+        serial: formData.serial
+       }
 
         fetch('http://localhost:3000/Gear', {
             method:"POST",
