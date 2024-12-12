@@ -1,6 +1,6 @@
 import React from 'react'
 
-function GearCard({ gearItem }){
+function GearCard({ gearItem, onDelete }){
     return(
         <div className="card" key={gearItem.id}>
             <div className="card-content">
@@ -12,6 +12,10 @@ function GearCard({ gearItem }){
                 />
                 <p className="card-description">{gearItem.description}</p>
                 <p className="card-serial">Serial #{gearItem.serial}</p>
+
+                <button className="delete-button" onClick={() => onDelete(gearItem.id)}>
+                    Delete
+                </button>
             </div>
 
         </div>

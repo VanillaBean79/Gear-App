@@ -23,13 +23,31 @@ function GearPage() {
       //     setGearData((prevGearData) => [...prevGearData, newGear])
       // }
 
+      const deleteGearItem = (id) => {
+        // Send DELETE request to the server
+        fetch(`http://localhost:3000/Gear/${id}`, {
+            method: 'DELETE',
+        })
+        .then((response) => response.json())
+        .then((data) => { 
+                setGearData((prevGearData) => prevGearData.filter((gearItem) => gearItem.id !== id));
+            })
+        
+        .catch((error) => {
+            console.error('Error deleting gear item:', error);
+        });
+    };
+      
+
       return (
         <div className="GearPage">
             <h2>Gear Manager</h2>
             
                   <ul>
                     {gearData.map((gearItem) => (
-                    <GearCard key={gearItem.id} gearItem={gearItem} />
+                    <GearCard key={gearItem.id} 
+                              gearItem={gearItem}
+                              onDelete={deleteGearItem} />
                      ))}
                    </ul>
                 
