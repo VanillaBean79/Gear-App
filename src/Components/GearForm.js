@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import './gearForm.css'
 
-function GearForm( { addGearItem }){
+function GearForm({ addGearItem }){
     const [formData, setFormData] = useState({
         image: '',
         name: '',
@@ -22,16 +22,10 @@ function GearForm( { addGearItem }){
       const handleSubmit = (e) => {
         e.preventDefault()
 
-       const newGear = {
-        name: formData.name,
-        image: formData.image,
-        description: formData.description,
-        serial: formData.serial
-       }
 
         fetch('http://localhost:3000/Gear', {
             method:"POST",
-            header: {
+            headers: {
                 "Content-type" : "application.json"
             },
             body: JSON.stringify(formData)
@@ -85,7 +79,7 @@ function GearForm( { addGearItem }){
                     <label htmlFor="description">Description:</label>
                     <input
                         type="text"
-                        id="name"
+                        id="description"
                         name="description"
                         value={formData.description}
                         onChange={handleChange}
@@ -101,7 +95,7 @@ function GearForm( { addGearItem }){
                         name="serial"
                         value={formData.serial}
                         onChange={handleChange}
-                        placholder="Enter serial number"
+                        placeholder="Enter serial number"
                         />
                 </div>
                 <button type='submit'>Submit</button>
