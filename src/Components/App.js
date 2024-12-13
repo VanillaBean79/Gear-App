@@ -3,7 +3,7 @@ import GearPage from './GearPage'
 import './App.css';
 import Home from './Home.js'
 import { BrowserRouter as Router } from 'react-router-dom'
-import GearForm from "./GearForm.js"
+
 
 function App() {
   return (
@@ -11,7 +11,6 @@ function App() {
       
        <div className="App">
           <Home />
-          <GearForm />
           <GearPage />
        </div>
      

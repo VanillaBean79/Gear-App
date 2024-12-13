@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import GearCard from './GearCard'
-
+import GearForm from './GearForm'
 
 function GearPage() {
     const [gearData, setGearData] = useState([])
@@ -19,12 +19,11 @@ function GearPage() {
           });
       }, []);  
 
-      // const addGearItem = (newGear) => {
-      //     setGearData((prevGearData) => [...prevGearData, newGear])
-      // }
+      const addGearItem = (newGear) => {
+          setGearData((prevGearData) => [...prevGearData, newGear])
+      }
 
       const deleteGearItem = (id) => {
-        // Send DELETE request to the server
         fetch(`http://localhost:3000/Gear/${id}`, {
             method: 'DELETE',
         })
@@ -42,13 +41,14 @@ function GearPage() {
       return (
         <div className="GearPage">
             <h2>Gear Manager</h2>
-            
+            <GearForm addGearItem={addGearItem} />
                   <ul>
                     {gearData.map((gearItem) => (
                     <GearCard key={gearItem.id} 
                               gearItem={gearItem}
-                              onDelete={deleteGearItem} />
-                     ))}
+                              onDelete={deleteGearItem} 
+                              />
+                      ))}
                    </ul>
                 
         </div>
