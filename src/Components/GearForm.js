@@ -10,6 +10,7 @@ function GearForm(){
       })
 
       const [ status, setStatus] = useState('')
+      const [loading, setLoading] = useState(false)
 
       const handleChange = (e) => {
             const { name, value } = e.target
@@ -26,14 +27,14 @@ function GearForm(){
         fetch('http://localhost:3000/Gear', {
             method:"POST",
             headers: {
-                "Content-type" : "application.json"
+                "Content-type" : "application/json"
             },
             body: JSON.stringify(formData)
         })
             .then((r)=>r.json())
             .then((data)=> {
                 setStatus('Gear item created.')
-
+                setLoading(true)
                 setFormData({
                     image: '',
                     name: '',
@@ -52,7 +53,7 @@ function GearForm(){
             <h2>Create New Gear Item</h2>
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
-                    <label htmlFor="image">Image URL:</label>
+                    <label htmlFor="image">Image:</label>
                     <input
                         type="text"
                         id="image"
@@ -98,7 +99,9 @@ function GearForm(){
                         placeholder="Enter serial number"
                         />
                 </div>
-                <button type='submit'>Submit</button>
+                <button type='submit' disabled={loading}>
+                    {loading ? 'Submitting...' : 'Submit'}
+                </button>
             </form>
             {status && <p className="status">{status}</p>}
         </div>
