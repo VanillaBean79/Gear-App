@@ -36,7 +36,10 @@
       "serial": "O08090094"
     },
     {
-        "id":"6"
+        "id":"6",
+        "name": "Fender California Series PJ 4 String Bass.",
+        "description": "Black with gold-ish metal pickguard.",
+        "image"
     }
   ]
   
