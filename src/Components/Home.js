@@ -6,7 +6,7 @@ const Home = () => {
         <div>
             <h1>My Gear Inventory</h1>
             <hr/>
-            <p>This application stores all vital gear information. The user is incouraged to upload a photo, type in the name, add a description, and the serial number for each piece of equipment that they would like to keep an inventory of for their personal records.</p>
+            <p>This application stores all vital gear information. Upload a photo, type in the name, add a description, and the serial number for each piece of equipment that you would like to keep an inventory of for your personal records.</p>
         </div>
     )
 }
