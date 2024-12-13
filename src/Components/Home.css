@@ -14,3 +14,14 @@ h1{
     color: rgb(75, 75, 212);
     background-color: rgb(105, 210, 75);
 }
+
+.home-image-container {
+    text-align: center;   
+    margin-top: 20px;
+}
+
+.home-image {
+    max-width: 100%;  
+    height: auto;     
+    max-height: 400px;
+}

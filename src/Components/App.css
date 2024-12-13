@@ -119,3 +119,19 @@ nav ul li a:hover {
 h2 {
   margin-top: 0;
 }
+
+.About-image-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  height: 400px;           
+  margin-top: 80px;
+}
+
+.About-image {
+  max-width: 100%;  
+  height: auto;     
+  max-height: 300px; 
+  border-radius: 10px;  
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);  
+}
