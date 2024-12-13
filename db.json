@@ -39,7 +39,8 @@
         "id":"6",
         "name": "Fender California Series PJ 4 String Bass.",
         "description": "Black with gold-ish metal pickguard.",
-        "image"
+        "image": "/images/gear6.png",
+        "serial": "AMNX719623"
     }
   ]
   
