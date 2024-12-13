@@ -34,8 +34,10 @@
       "description": "Red, Green, and Black spill paint coat. Screamin Demon neck pickups and Seth Lover Humbucker. Drop C tunning.",
       "image": "/images/gear5.png",
       "serial": "O08090094"
+    },
+    {
+        "id":"6"
     }
-  ],
-  "name": [],
-  "image": []
+  ]
+  
 }
