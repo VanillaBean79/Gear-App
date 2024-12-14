@@ -20,7 +20,7 @@ function GearPage() {
       }, []);  
 
       const addGearItem = (newGear) => {
-          setGearData((prevGearData) => [...prevGearData, newGear])
+        setGearData((prevGearData) => [...prevGearData, newGear])
       }
 
       const deleteGearItem = (id) => {
@@ -42,6 +42,9 @@ function GearPage() {
         <div className="GearPage">
             <h2>Gear Manager</h2>
             <GearForm addGearItem={addGearItem} />
+            {loading ? (
+                <p>Loading...</p>
+            ) : (
                   <ul>
                     {gearData.map((gearItem) => (
                     <GearCard key={gearItem.id} 
@@ -50,7 +53,7 @@ function GearPage() {
                               />
                       ))}
                    </ul>
-                
+            )}
         </div>
     );
 }

@@ -13,15 +13,19 @@ function GearForm({addGearItem}){
       const [loading, setLoading] = useState(false)
 
       const handleChange = (e) => {
-            const { name, value } = e.target
-            setFormData({
-                ...formData,
-                [name]: value 
-            })
-        }
+        setFormData({...formData, [e.target.name]: e.target.value})
+    }
+        
 
       const handleSubmit = (e) => {
         e.preventDefault()
+
+        const newGear = {
+            name: formData.name,
+            image: formData.image,
+            description: formData.description,
+            serial: formData.serial
+        }
 
 
         fetch('http://localhost:3000/Gear', {
@@ -29,10 +33,11 @@ function GearForm({addGearItem}){
             headers: {
                 "Content-type" : "application/json"
             },
-            body: JSON.stringify(formData)
+            body: JSON.stringify(newGear)
         })
             .then((r)=>r.json())
-            .then((data)=> {
+            .then((addedGear)=> {
+                addGearItem(addedGear)
                 setStatus('Gear item created.')
                 setLoading(true)
                 setFormData({
